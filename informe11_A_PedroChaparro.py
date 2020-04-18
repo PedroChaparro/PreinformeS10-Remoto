@@ -37,5 +37,11 @@ imprimir_ingresos = imprimir(ingresos)
 print(" \n ARRAY DE EGRESOS: ")
 imprimir_egresos = imprimir(egresos)
 
+#Numeral e  
 
+def calculador(a, b):
+    
+    r = (np.subtract(a, b))
+    return r
             
+
