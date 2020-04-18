@@ -8,9 +8,7 @@ def generador(min, max):
     
     return v_aleatorios
     
-    
-minimo = int(input("Ingrese el valor mímino para llenar el arreglo de números aleatorios: "))
-maximo = int(input("Ingrese el valor máximo para llenar el arreglo de números aleatorios: "))
-maximo = maximo + 1
+#Numeral b
 
-llamar_generador = generador(minimo, maximo)
+ingresos = generador(100, 181)
+egresos = generador(60, 130)
