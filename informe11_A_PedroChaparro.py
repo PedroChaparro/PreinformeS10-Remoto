@@ -45,3 +45,9 @@ def calculador(a, b):
     return r
             
 
+#Numeral f  
+
+ganancias = calculador(ingresos, egresos)
+print("\n Las ganancias o pérdidas son: ")
+print(ganancias)
+
