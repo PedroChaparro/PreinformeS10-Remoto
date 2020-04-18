@@ -27,6 +27,15 @@ def imprimir(bidim):
         print("Para la ciudad: {}, los ingresos, o egresos, según el caso, en millones de pesos fueron: ".format(ciudades[c]))
         for f in range(0,12, 1):
             print("Para el mes {}: {}".format(meses[f] , bidim[c][f]))
+      
             
-llamar = imprimir(ingresos)
+# Numeral d
+
+print(" \n ARARY DE INGRESOS: ")
+imprimir_ingresos = imprimir(ingresos)
+
+print(" \n ARRAY DE EGRESOS: ")
+imprimir_egresos = imprimir(egresos)
+
+
             
