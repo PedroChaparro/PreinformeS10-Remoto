@@ -103,6 +103,19 @@ def peor_ciudad(ganancias_finales):
         
 callPeorCiudad = peor_ciudad(ganancias)
 
+#Numeral i
+
+def mejor_mes(ganancias):
+    
+    ciudades = np.array(["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"])
+    meses = np.array(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiempre", "Octubre", "Nobiembre", "Diciembre"])
+    
+    for i in range (0,4,1):
+        mayor = np.max(ganancias[i])
+        print("El mes ")
+        
+callMejorMes = mejor_mes(ganancias)
+
 
 
 
