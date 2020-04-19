@@ -116,7 +116,29 @@ def mejor_mes(ganancias):
         
 callMejorMes = mejor_mes(ganancias)
 
+#Numeral j
 
+def imprimir_personalizado(array, inicio, fin):
+    
+    ciudades = np.array(["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"])
+    meses = np.array(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiempre", "Octubre", "Nobiembre", "Diciembre"])
+    
+    for i in range (0, 4, 1):
+        print("Para la ciudad {}, los ingresos, egresos o ganancias, según lo seleccionado, en millones de pesos para los meses seleccionados fueron:".format(ciudades[i]))
+        
+        for u in range(inicio-1, fin, 1):
+            print("Para el mes {}: {}".format(meses[u], array[i][u]))
 
+array = input("Ingrese \"a\" si quiere calcular los ingresos, \"b\" si quiere calcular los egresos, y \"c\" si se trata de las ganancias: ")
+if array == "a":
+    array = ingresos
+elif array == "b":
+    array = egresos
+else: 
+    array = ganancias
+    
+inicio = int(input("Ingrese el mes desde el que desea calcular: "))
+fin = int(input("Ingrese el mes hasta el que desea calcular: "))
 
-            
+call_imprimir_personalizado = imprimir_personalizado(array, inicio, fin)
+
