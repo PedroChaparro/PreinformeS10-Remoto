@@ -79,5 +79,31 @@ def mejor_ciudad(ganancias_finales):
     
 callMejorCiudad = mejor_ciudad(ganancias)
 
+#Numeral h
+
+def peor_ciudad(ganancias_finales):
+    
+    ciudades = np.array(["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"])
+    
+    suma = np.array([
+        [np.sum(ganancias_finales[0])],
+        [np.sum(ganancias_finales[1])],
+        [np.sum(ganancias_finales[2])],
+        [np.sum(ganancias_finales[3])],
+        ])
+    
+    if suma[0] < suma[1] and suma[0] < suma[2] and suma[0] < suma[3]:
+        print("La ciudad {} es la de menores ganancias, con un total de {}".format(ciudades[0], suma[0]))
+    elif suma[1] < suma[0] and suma[1] < suma[2] and suma[1] < suma[3]:
+        print("La ciudad {} es la de menores ganancias, con un total de {}".format(ciudades[1], suma[1]))
+    elif suma[2] < suma[0] and suma[2] < suma[1] and suma[2] < suma[3]:
+        print("La ciudad {} es la de menores ganancias, con un total de {}".format(ciudades[2], suma[2]))
+    else: 
+        print("La ciudad {} es la de menores ganancias, con un total de {}".format(ciudades[3], suma[3]))
+        
+callPeorCiudad = peor_ciudad(ganancias)
+
+
+
 
             
